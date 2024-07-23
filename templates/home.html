@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Sentiment Analyser</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Analyse des Sentiments des Tweets</h1>
+        <textarea id="tweet" placeholder="Entrez votre tweet ici..."></textarea>
+        <button onclick="analyzeSentiment()">Analyser le Sentiment</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <!-- javaScrip file source -->
+    <script src="./static/script.js"></script>
+</body>
+</html>
